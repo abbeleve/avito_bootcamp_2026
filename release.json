@@ -1,0 +1,51 @@
+{
+  "release": "agent_3/e3_four",
+  "channels": [
+    "orchestrator/baseline_bm25_geo",
+    "agent_1/lex_fields",
+    "agent_2/e5_base_zs_geo",
+    "agent_2/e5_base_zs_nogeo"
+  ],
+  "seeds": [
+    17,
+    23,
+    42
+  ],
+  "models": [
+    "models/ranker_17.txt",
+    "models/ranker_23.txt",
+    "models/ranker_42.txt"
+  ],
+  "pool_quotas": [
+    1000,
+    350,
+    350,
+    350
+  ],
+  "max_pool": 2000,
+  "topk": 50,
+  "reference_sha256": {
+    "val": "d07efb06b059859d886aa66c14252a057448d2f891b2c76749d25b227655fabd",
+    "test": "d22bf1a3d6adbacf784dea7f4a758448cd01f02bb394a63e54da6aee69bcd7a1",
+    "bench": "cd074ac87685aa80b391c9f10c00b12ea920e93efe419decf8d289d6a9a47765"
+  },
+  "expected_recall": {
+    "val": 0.94,
+    "test": 0.9276
+  },
+  "encoder": {
+    "name": "intfloat/multilingual-e5-base",
+    "revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+    "license": "MIT",
+    "item_variant": "T3",
+    "query_variant": "text+filters"
+  },
+  "runtime_dependencies": {
+    "numpy": "2.5.3",
+    "polars": "1.44.2",
+    "lightgbm": "4.7.0",
+    "snowballstemmer": "3.1.1",
+    "scipy": "1.18.1",
+    "narwhals": "2.26.0"
+  }
+}

@@ -1,0 +1,15 @@
+.venv/
+runtime/
+__pycache__/
+*.pyc
+*.partial
+reproduced_answer.csv
+.DS_Store
+
+# Тяжёлые артефакты передаются отдельно
+/bundle/
+*.npy
+*.parquet
+*.part
+*.zip
+*.tar.gz

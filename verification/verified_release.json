@@ -1,0 +1,51 @@
+{
+  "release": "agent_3/e3_four",
+  "external_api_calls": 0,
+  "method": "rebuild candidate union + extract features + run frozen 3-seed ensemble",
+  "splits": {
+    "bench": {
+      "split": "bench",
+      "queries": 2452,
+      "pairs": 3601287,
+      "features": 58,
+      "sha256": "cd074ac87685aa80b391c9f10c00b12ea920e93efe419decf8d289d6a9a47765",
+      "file": "runtime/generated/answer.csv",
+      "identical_bytes": true
+    },
+    "val": {
+      "split": "val",
+      "queries": 2000,
+      "pairs": 2954841,
+      "features": 58,
+      "sha256": "d07efb06b059859d886aa66c14252a057448d2f891b2c76749d25b227655fabd",
+      "file": "runtime/generated/val_answer.csv",
+      "identical_bytes": true,
+      "recall_at_50": 0.94,
+      "ci95": [
+        0.9293,
+        0.9503
+      ]
+    },
+    "test": {
+      "split": "test",
+      "queries": 2000,
+      "pairs": 2960249,
+      "features": 58,
+      "sha256": "d22bf1a3d6adbacf784dea7f4a758448cd01f02bb394a63e54da6aee69bcd7a1",
+      "file": "runtime/generated/test_answer.csv",
+      "identical_bytes": true,
+      "recall_at_50": 0.927625,
+      "ci95": [
+        0.9165,
+        0.9393
+      ]
+    }
+  },
+  "seconds": 221.81,
+  "isolated_run": {
+    "working_directory": "/tmp",
+    "python_isolated_mode": true,
+    "network": "restricted sandbox",
+    "original_checkout_inputs_used": false
+  }
+}

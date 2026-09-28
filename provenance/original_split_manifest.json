@@ -1,0 +1,169 @@
+{
+  "protocol": "v1",
+  "seed": 20260928,
+  "max_rel": 5,
+  "convert_max": 30,
+  "counts": {
+    "train_rows": 497673,
+    "hist_rows": 454043,
+    "eligible_searches": 26493,
+    "candidate_texts": 12168,
+    "val": 2000,
+    "test": 2000,
+    "rtrain": 5334,
+    "converted_texts": 2719
+  },
+  "removed_rows": {
+    "query_set_search_rows": 11977,
+    "other_rows_with_query_set_items": 10357,
+    "converted_text_rows": 21296
+  },
+  "corpus_items_seen_in_hist": 0.0439,
+  "shares": {
+    "bench": {
+      "loc_coarse": {
+        "city_L": 0.2259,
+        "city_M": 0.2953,
+        "city_S": 0.0832,
+        "msk": 0.1342,
+        "spb": 0.0873,
+        "wide": 0.1741
+      },
+      "f_bucket": {
+        "0": 0.6252,
+        "1": 0.0962,
+        "2-3": 0.0967,
+        "31+": 0.029,
+        "4-8": 0.093,
+        "9-30": 0.06
+      },
+      "has_filter": {
+        "False": 0.6305,
+        "True": 0.3695
+      },
+      "words_bucket": {
+        "1": 0.0436,
+        "2": 0.2855,
+        "3": 0.3189,
+        "4": 0.21,
+        "5+": 0.1419
+      },
+      "seen_text": {
+        "False": 0.6252,
+        "True": 0.3748
+      }
+    },
+    "val": {
+      "loc_coarse": {
+        "city_L": 0.225,
+        "city_M": 0.295,
+        "city_S": 0.0845,
+        "msk": 0.1345,
+        "spb": 0.0875,
+        "wide": 0.1735
+      },
+      "f_bucket": {
+        "0": 0.626,
+        "1": 0.1015,
+        "2-3": 0.0935,
+        "31+": 0.0305,
+        "4-8": 0.089,
+        "9-30": 0.0595
+      },
+      "has_filter": {
+        "False": 0.626,
+        "True": 0.374
+      },
+      "words_bucket": {
+        "1": 0.0425,
+        "2": 0.2905,
+        "3": 0.3205,
+        "4": 0.2125,
+        "5+": 0.134
+      },
+      "seen_text": {
+        "False": 0.626,
+        "True": 0.374
+      }
+    },
+    "test": {
+      "loc_coarse": {
+        "city_L": 0.225,
+        "city_M": 0.295,
+        "city_S": 0.0845,
+        "msk": 0.1345,
+        "spb": 0.0875,
+        "wide": 0.1735
+      },
+      "f_bucket": {
+        "0": 0.628,
+        "1": 0.099,
+        "2-3": 0.0945,
+        "31+": 0.03,
+        "4-8": 0.0875,
+        "9-30": 0.061
+      },
+      "has_filter": {
+        "False": 0.625,
+        "True": 0.375
+      },
+      "words_bucket": {
+        "1": 0.0415,
+        "2": 0.293,
+        "3": 0.322,
+        "4": 0.2105,
+        "5+": 0.133
+      },
+      "seen_text": {
+        "False": 0.628,
+        "True": 0.372
+      }
+    },
+    "rtrain": {
+      "loc_coarse": {
+        "city_L": 0.2351,
+        "city_M": 0.2613,
+        "city_S": 0.1438,
+        "msk": 0.1466,
+        "spb": 0.0821,
+        "wide": 0.131
+      },
+      "f_bucket": {
+        "0": 0.5928,
+        "1": 0.0232,
+        "2-3": 0.0433,
+        "31+": 0.2023,
+        "4-8": 0.0716,
+        "9-30": 0.0667
+      },
+      "has_filter": {
+        "False": 0.3256,
+        "True": 0.6744
+      },
+      "words_bucket": {
+        "1": 0.0896,
+        "2": 0.4074,
+        "3": 0.3228,
+        "4": 0.1385,
+        "5+": 0.0416
+      },
+      "seen_text": {
+        "False": 0.5928,
+        "True": 0.4072
+      }
+    }
+  },
+  "hashes": {
+    "bench_meta": "28fb821fb1914ecf",
+    "val_queries": "fa46ec92518f5756",
+    "val_qrels": "8561b4fb8417e542",
+    "val_meta": "11eda57f27c61eac",
+    "test_queries": "8322ba1b3d07a1af",
+    "test_qrels": "e0795bad58f029fd",
+    "test_meta": "ecc357db6d9840c7",
+    "rtrain_queries": "06d8b4d565779375",
+    "rtrain_qrels": "832a6596569d38d9",
+    "rtrain_meta": "039f492d2f50d255",
+    "hist_row_ids": "778bfea3c237f606"
+  }
+}

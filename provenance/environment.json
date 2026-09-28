@@ -1,0 +1,12 @@
+{
+  "numpy": "2.5.3",
+  "polars": "1.44.2",
+  "lightgbm": "4.7.0",
+  "snowballstemmer": "3.1.1",
+  "scipy": "1.18.1",
+  "scikit-learn": "1.9.1",
+  "torch": "2.14.0+cu130",
+  "transformers": "5.17.0",
+  "sentence-transformers": "6.1.0",
+  "narwhals": "2.26.0"
+}

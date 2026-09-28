@@ -1,0 +1,797 @@
+{
+  "format": 1,
+  "part_bytes": 33554432,
+  "files": [
+    {
+      "path": "benchmark_items.parquet",
+      "bytes": 195679553,
+      "sha256": "193b3a3961464620cbf8d8797152b7f90cae1826ca749fb7817a210984a09899",
+      "role": "raw benchmark input, unchanged",
+      "parts": [
+        {
+          "path": "bundle/0000-000.part",
+          "bytes": 33554432,
+          "sha256": "166b5121343583c029885526fffdeea19118b02a73d190ed21cf5fb0f7a6f47a"
+        },
+        {
+          "path": "bundle/0000-001.part",
+          "bytes": 33554432,
+          "sha256": "4d905ce81722b5b5ac2db9a95852c652a404314418ba5ac113608fbf2143046e"
+        },
+        {
+          "path": "bundle/0000-002.part",
+          "bytes": 33554432,
+          "sha256": "2429b3d2387a83782a7efc9d6f8bf63c11b53cb813bc5ef5a4eca5edeb7288b4"
+        },
+        {
+          "path": "bundle/0000-003.part",
+          "bytes": 33554432,
+          "sha256": "87a6317f833e6c0fd6481bfd56aa51d7641679c1979ee6f96fa9f079249cfa1a"
+        },
+        {
+          "path": "bundle/0000-004.part",
+          "bytes": 33554432,
+          "sha256": "2f43b85ca62a63dd45e9750c60d8e1efb4fba67b1d08d284e4b89c478fd5c16a"
+        },
+        {
+          "path": "bundle/0000-005.part",
+          "bytes": 27907393,
+          "sha256": "192eece6fb263971c4140f469595db3a4005b982645f52fb12a4ad59f468467b"
+        }
+      ]
+    },
+    {
+      "path": "benchmark_queries.parquet",
+      "bytes": 127374,
+      "sha256": "e49de4fb76f03979a4af96034817767d39ae5de9f94e254fed028243188dda06",
+      "role": "raw benchmark input, unchanged",
+      "parts": [
+        {
+          "path": "bundle/0001-000.part",
+          "bytes": 127374,
+          "sha256": "e49de4fb76f03979a4af96034817767d39ae5de9f94e254fed028243188dda06"
+        }
+      ]
+    },
+    {
+      "path": "data/splits/v1/hist.parquet",
+      "bytes": 15034808,
+      "sha256": "69261eeb32c1262fa9bdbc8facecb9e75b41485bfaa78a5ba073a419c2787365",
+      "role": "column projection of hist; unchanged rows/order",
+      "parts": [
+        {
+          "path": "bundle/0002-000.part",
+          "bytes": 15034808,
+          "sha256": "69261eeb32c1262fa9bdbc8facecb9e75b41485bfaa78a5ba073a419c2787365"
+        }
+      ]
+    },
+    {
+      "path": "train.parquet",
+      "bytes": 15167715,
+      "sha256": "72ff0599eac74da6f6c1e73bb0842552c1b129dd640c0e46c6e4cf4e30335c7c",
+      "role": "column projection of full train; unchanged rows/order",
+      "parts": [
+        {
+          "path": "bundle/0003-000.part",
+          "bytes": 15167715,
+          "sha256": "72ff0599eac74da6f6c1e73bb0842552c1b129dd640c0e46c6e4cf4e30335c7c"
+        }
+      ]
+    },
+    {
+      "path": "data/splits/v1/rtrain_queries.parquet",
+      "bytes": 85692,
+      "sha256": "a375735a59f7a635817b5c38819c62e9b4e2fde9f33f381e0c7ca60ac111216f",
+      "role": "frozen split v1; qrels are never inference features",
+      "parts": [
+        {
+          "path": "bundle/0004-000.part",
+          "bytes": 85692,
+          "sha256": "a375735a59f7a635817b5c38819c62e9b4e2fde9f33f381e0c7ca60ac111216f"
+        }
+      ]
+    },
+    {
+      "path": "data/splits/v1/rtrain_qrels.parquet",
+      "bytes": 55006,
+      "sha256": "be3fee6ecceff8e16865d0af8ae5fcca384e678eb754b900a53b84202a43c9e5",
+      "role": "frozen split v1; qrels are never inference features",
+      "parts": [
+        {
+          "path": "bundle/0005-000.part",
+          "bytes": 55006,
+          "sha256": "be3fee6ecceff8e16865d0af8ae5fcca384e678eb754b900a53b84202a43c9e5"
+        }
+      ]
+    },
+    {
+      "path": "data/splits/v1/rtrain_meta.parquet",
+      "bytes": 38737,
+      "sha256": "1b89bb9a785456a671a3da6c50f2094ed61a8f5178324b6cf96ac990b62fe65c",
+      "role": "frozen split v1; qrels are never inference features",
+      "parts": [
+        {
+          "path": "bundle/0006-000.part",
+          "bytes": 38737,
+          "sha256": "1b89bb9a785456a671a3da6c50f2094ed61a8f5178324b6cf96ac990b62fe65c"
+        }
+      ]
+    },
+    {
+      "path": "data/splits/v1/val_queries.parquet",
+      "bytes": 39264,
+      "sha256": "12168e717778bab4d0017f9eb36bc5f75c3fa22a521554d482c828473675243c",
+      "role": "frozen split v1; qrels are never inference features",
+      "parts": [
+        {
+          "path": "bundle/0007-000.part",
+          "bytes": 39264,
+          "sha256": "12168e717778bab4d0017f9eb36bc5f75c3fa22a521554d482c828473675243c"
+        }
+      ]
+    },
+    {
+      "path": "data/splits/v1/val_qrels.parquet",
+      "bytes": 20875,
+      "sha256": "0fa0ef01aa8448f95923bb8bc0fc3fa1ea59055ab78862163029a1586720a61d",
+      "role": "frozen split v1; qrels are never inference features",
+      "parts": [
+        {
+          "path": "bundle/0008-000.part",
+          "bytes": 20875,
+          "sha256": "0fa0ef01aa8448f95923bb8bc0fc3fa1ea59055ab78862163029a1586720a61d"
+        }
+      ]
+    },
+    {
+      "path": "data/splits/v1/val_meta.parquet",
+      "bytes": 17394,
+      "sha256": "767d78070debff152c7555f18e4d457b9812a975e1c4304a8f6a226ffe297d5c",
+      "role": "frozen split v1; qrels are never inference features",
+      "parts": [
+        {
+          "path": "bundle/0009-000.part",
+          "bytes": 17394,
+          "sha256": "767d78070debff152c7555f18e4d457b9812a975e1c4304a8f6a226ffe297d5c"
+        }
+      ]
+    },
+    {
+      "path": "data/splits/v1/test_queries.parquet",
+      "bytes": 39787,
+      "sha256": "a106e86d66db9eeffacfc19f4d0d4600153512357677ae36b3d7f23edd504de6",
+      "role": "frozen split v1; qrels are never inference features",
+      "parts": [
+        {
+          "path": "bundle/0010-000.part",
+          "bytes": 39787,
+          "sha256": "a106e86d66db9eeffacfc19f4d0d4600153512357677ae36b3d7f23edd504de6"
+        }
+      ]
+    },
+    {
+      "path": "data/splits/v1/test_qrels.parquet",
+      "bytes": 21222,
+      "sha256": "338d74b65cef9ce0f76dfb5a4a1a6d4b76e25b178cf46c07c7e11be1d0fbfa1f",
+      "role": "frozen split v1; qrels are never inference features",
+      "parts": [
+        {
+          "path": "bundle/0011-000.part",
+          "bytes": 21222,
+          "sha256": "338d74b65cef9ce0f76dfb5a4a1a6d4b76e25b178cf46c07c7e11be1d0fbfa1f"
+        }
+      ]
+    },
+    {
+      "path": "data/splits/v1/test_meta.parquet",
+      "bytes": 17170,
+      "sha256": "84e60b2fd9d314ff2d58ecd2203b12a729950a286016affea659ec8977f09370",
+      "role": "frozen split v1; qrels are never inference features",
+      "parts": [
+        {
+          "path": "bundle/0012-000.part",
+          "bytes": 17170,
+          "sha256": "84e60b2fd9d314ff2d58ecd2203b12a729950a286016affea659ec8977f09370"
+        }
+      ]
+    },
+    {
+      "path": "data/splits/v1/bench_meta.parquet",
+      "bytes": 43847,
+      "sha256": "808ef5b9ee624a3636e53315128273816ed61404dbf2570c4a5a8fe10d56e2c4",
+      "role": "frozen split v1; qrels are never inference features",
+      "parts": [
+        {
+          "path": "bundle/0013-000.part",
+          "bytes": 43847,
+          "sha256": "808ef5b9ee624a3636e53315128273816ed61404dbf2570c4a5a8fe10d56e2c4"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/orchestrator/baseline_bm25_geo/meta.json",
+      "bytes": 287,
+      "sha256": "4816eba21fca221a5353f35d5d6e4cb47feb357567c63207c7363cc4818021d4",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0014-000.part",
+          "bytes": 287,
+          "sha256": "4816eba21fca221a5353f35d5d6e4cb47feb357567c63207c7363cc4818021d4"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/orchestrator/baseline_bm25_geo/rtrain.parquet",
+      "bytes": 53655603,
+      "sha256": "e7696dbe0c54d3992b275e782f540643977d93736d47b4b9e1f7e926bac7859c",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0015-000.part",
+          "bytes": 33554432,
+          "sha256": "d12f9352e5ceb9f49ebb48402c972f8115e098702553e26cbf0004ab3f270b1e"
+        },
+        {
+          "path": "bundle/0015-001.part",
+          "bytes": 20101171,
+          "sha256": "3552620a8e326ead9c5f26a6307b348e131c0a52307317d53cc477b23460baaa"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/orchestrator/baseline_bm25_geo/val.parquet",
+      "bytes": 21638096,
+      "sha256": "5965e8a6f989d85eedf3d04401972f40fe720058d870140433d7fce708002427",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0016-000.part",
+          "bytes": 21638096,
+          "sha256": "5965e8a6f989d85eedf3d04401972f40fe720058d870140433d7fce708002427"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/orchestrator/baseline_bm25_geo/test.parquet",
+      "bytes": 21591942,
+      "sha256": "3f3021038e89b4ea0a9ff216bb256dce7a3e23a9baf8ff1890d31aa20c4b6ce7",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0017-000.part",
+          "bytes": 21591942,
+          "sha256": "3f3021038e89b4ea0a9ff216bb256dce7a3e23a9baf8ff1890d31aa20c4b6ce7"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/orchestrator/baseline_bm25_geo/bench.parquet",
+      "bytes": 25973457,
+      "sha256": "69ac3b2484155a5d49d6347cd4225a9a5199c3692108e158b142398a9ce99f06",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0018-000.part",
+          "bytes": 25973457,
+          "sha256": "69ac3b2484155a5d49d6347cd4225a9a5199c3692108e158b142398a9ce99f06"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_1/lex_fields/meta.json",
+      "bytes": 814,
+      "sha256": "5049f7328215ffc85fbb926267e51663f1a0c620c43fab10790a554b61fe2544",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0019-000.part",
+          "bytes": 814,
+          "sha256": "5049f7328215ffc85fbb926267e51663f1a0c620c43fab10790a554b61fe2544"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_1/lex_fields/rtrain.parquet",
+      "bytes": 103527909,
+      "sha256": "1dac3278c1ab0c7df3ee527786f1364c3c8d504566b34ddccdae89f18b445e82",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0020-000.part",
+          "bytes": 33554432,
+          "sha256": "cdb84582d2f7d0338d390d625d6f8c8f488eabfa3874eed7ada7317308a9d9c9"
+        },
+        {
+          "path": "bundle/0020-001.part",
+          "bytes": 33554432,
+          "sha256": "f614784ce694483b2d2c48c5bcdd068b5ff8e1b014ce2fec06d41fd191aa2d68"
+        },
+        {
+          "path": "bundle/0020-002.part",
+          "bytes": 33554432,
+          "sha256": "1fcc17265cf551da2242eef3c04851d94930dce10859f3055edc4550ef6d330c"
+        },
+        {
+          "path": "bundle/0020-003.part",
+          "bytes": 2864613,
+          "sha256": "629ac6ccd07d4b1ea0190f54ebecac5cbfc683740da8dd026c52a474bad57f64"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_1/lex_fields/val.parquet",
+      "bytes": 40107778,
+      "sha256": "fd0bdce800e89372fe7034dc2de7319c2485576c036c0397eabcbe010d3fac89",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0021-000.part",
+          "bytes": 33554432,
+          "sha256": "5680a03812e218b0458372c9629701290b07db61ba6de96fb9aeeca78073ea68"
+        },
+        {
+          "path": "bundle/0021-001.part",
+          "bytes": 6553346,
+          "sha256": "ad508282628bbc231e496113c3a2ae576c3454a200d446370ffbcf6a9c375e97"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_1/lex_fields/test.parquet",
+      "bytes": 40000265,
+      "sha256": "bd68280d516c3db677935a47724fb4e7b0f8ec9f9a35086ceb56492d46d6918a",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0022-000.part",
+          "bytes": 33554432,
+          "sha256": "30773540d99c4f56bb36b724ab15b7ea3f2614ae7a306d9c0e3f29857cb76b83"
+        },
+        {
+          "path": "bundle/0022-001.part",
+          "bytes": 6445833,
+          "sha256": "e550a98478546c670ecf356870e368b3a29ae50571e141fcffef3c1f53e9e3f7"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_1/lex_fields/bench.parquet",
+      "bytes": 49029897,
+      "sha256": "53c5eb82726dc3de03242d903416f52490d8d3bde149f385bb9a658bbd7d0b66",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0023-000.part",
+          "bytes": 33554432,
+          "sha256": "76a10355267f1f44dde7862b0f1a3381e9fc0bcd25c229e5b0f15f23fedc1d9c"
+        },
+        {
+          "path": "bundle/0023-001.part",
+          "bytes": 15475465,
+          "sha256": "5f8bb09d5e928f4ffcec31ddaf250b17aabde5ab92ae91427b8326127e2898cd"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_2/e5_base_zs_geo/meta.json",
+      "bytes": 442,
+      "sha256": "18cdbc153369e10745279098402fef4ff55fb9b69fe84cfa244d0f59a1587aa5",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0024-000.part",
+          "bytes": 442,
+          "sha256": "18cdbc153369e10745279098402fef4ff55fb9b69fe84cfa244d0f59a1587aa5"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_2/e5_base_zs_geo/rtrain.parquet",
+      "bytes": 85084915,
+      "sha256": "254a78557ad884fb203ad3ee978095a0ad18f8afec0792b46825a00f97a47680",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0025-000.part",
+          "bytes": 33554432,
+          "sha256": "e4cb6821bd4bbd01305dc8a4d3fe2f555fcc2af0ed801ebc614496689b717f44"
+        },
+        {
+          "path": "bundle/0025-001.part",
+          "bytes": 33554432,
+          "sha256": "c01b62490ad57fe3637888ef790094482522ca7abc23093e98f7b9458cb78b96"
+        },
+        {
+          "path": "bundle/0025-002.part",
+          "bytes": 17976051,
+          "sha256": "1b6f88d3be18727cbc233fea1b75390722a5a6380981b2f74c99c4e29c0b6c7c"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_2/e5_base_zs_geo/val.parquet",
+      "bytes": 32440644,
+      "sha256": "66247d7e00d5c447a7cfce7dc61e29ca38825b12f63d3956958898c7bf3bdb5f",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0026-000.part",
+          "bytes": 32440644,
+          "sha256": "66247d7e00d5c447a7cfce7dc61e29ca38825b12f63d3956958898c7bf3bdb5f"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_2/e5_base_zs_geo/test.parquet",
+      "bytes": 32287256,
+      "sha256": "101db27489d73599ab7b68c6e3bd15c6ac295e5d0d9aec1c6621582fd0e0a90c",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0027-000.part",
+          "bytes": 32287256,
+          "sha256": "101db27489d73599ab7b68c6e3bd15c6ac295e5d0d9aec1c6621582fd0e0a90c"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_2/e5_base_zs_geo/bench.parquet",
+      "bytes": 40022923,
+      "sha256": "ffd3fc4a02c51c4184ae69274b1d78bded5199b26c5a4f5f4a6f19965b6eb16f",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0028-000.part",
+          "bytes": 33554432,
+          "sha256": "4d0a36eb4347c602c017b729bf99af93d3970d2d2d2aa2ac34f0cd3eccb6404a"
+        },
+        {
+          "path": "bundle/0028-001.part",
+          "bytes": 6468491,
+          "sha256": "1b1d7898ffe0ec3a9cf6b109ea4805264dbf1e3e40f361b97e0f0e84aaf5d3b9"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_2/e5_base_zs_nogeo/meta.json",
+      "bytes": 400,
+      "sha256": "01094c96be655270152f958bfc27d46b71d85b2572cf568cddfcb72169c5685c",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0029-000.part",
+          "bytes": 400,
+          "sha256": "01094c96be655270152f958bfc27d46b71d85b2572cf568cddfcb72169c5685c"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_2/e5_base_zs_nogeo/rtrain.parquet",
+      "bytes": 21561280,
+      "sha256": "c68b374b4f6384a18e828d78ebd46592d4cfdb4974209609caf4d3e24126d58f",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0030-000.part",
+          "bytes": 21561280,
+          "sha256": "c68b374b4f6384a18e828d78ebd46592d4cfdb4974209609caf4d3e24126d58f"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_2/e5_base_zs_nogeo/val.parquet",
+      "bytes": 8315502,
+      "sha256": "bfc3c3599ac94212ddec210f1a843997fb7eb66c3b5ee50ffc4e808c5c828793",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0031-000.part",
+          "bytes": 8315502,
+          "sha256": "bfc3c3599ac94212ddec210f1a843997fb7eb66c3b5ee50ffc4e808c5c828793"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_2/e5_base_zs_nogeo/test.parquet",
+      "bytes": 8310904,
+      "sha256": "881655739d90e0cd0dd858b707d91f1a95971b0b023b730f26a8024a4f1039ce",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0032-000.part",
+          "bytes": 8310904,
+          "sha256": "881655739d90e0cd0dd858b707d91f1a95971b0b023b730f26a8024a4f1039ce"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_2/e5_base_zs_nogeo/bench.parquet",
+      "bytes": 10543785,
+      "sha256": "d170b84dbe36f83966b512d61179ac29907e0f09cde57c12785db4071920101e",
+      "role": "frozen retrieval scores, before ranker, not final answers",
+      "parts": [
+        {
+          "path": "bundle/0033-000.part",
+          "bytes": 10543785,
+          "sha256": "d170b84dbe36f83966b512d61179ac29907e0f09cde57c12785db4071920101e"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_1/items_params/meta.json",
+      "bytes": 1018,
+      "sha256": "ddfe1c233924eac0b8f55ec962a929762bc249c3dc75a4c94a08630388278b27",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0034-000.part",
+          "bytes": 1018,
+          "sha256": "ddfe1c233924eac0b8f55ec962a929762bc249c3dc75a4c94a08630388278b27"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_1/items_params/items.parquet",
+      "bytes": 20945608,
+      "sha256": "4525380ebce100bb137f272775a732a566dda875463c3ae5d0a85772d76244cc",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0035-000.part",
+          "bytes": 20945608,
+          "sha256": "4525380ebce100bb137f272775a732a566dda875463c3ae5d0a85772d76244cc"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_1/query_filters/meta.json",
+      "bytes": 845,
+      "sha256": "621cca8373ed90680da9213f9af5194c2e5c14ab31df10890b0e011784ddb402",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0036-000.part",
+          "bytes": 845,
+          "sha256": "621cca8373ed90680da9213f9af5194c2e5c14ab31df10890b0e011784ddb402"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_1/query_filters/rtrain.parquet",
+      "bytes": 45179,
+      "sha256": "47eb7c2f330b41bbd23a50d2fa7cc4b4119d62e45bd9453503e4b3fbffe4f9ed",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0037-000.part",
+          "bytes": 45179,
+          "sha256": "47eb7c2f330b41bbd23a50d2fa7cc4b4119d62e45bd9453503e4b3fbffe4f9ed"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_1/query_filters/val.parquet",
+      "bytes": 16596,
+      "sha256": "8f4ec00fd6a7e9eb18014f2aa558ec43437e3f55be86ca25b0aec8ee0747576f",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0038-000.part",
+          "bytes": 16596,
+          "sha256": "8f4ec00fd6a7e9eb18014f2aa558ec43437e3f55be86ca25b0aec8ee0747576f"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_1/query_filters/test.parquet",
+      "bytes": 16784,
+      "sha256": "56138536d281295d027b079f3e8b6bd5bc0b4689d7e87551f4d4d1f04264710d",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0039-000.part",
+          "bytes": 16784,
+          "sha256": "56138536d281295d027b079f3e8b6bd5bc0b4689d7e87551f4d4d1f04264710d"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_1/query_filters/bench.parquet",
+      "bytes": 47046,
+      "sha256": "334271111f38bc62bd317b76ad5c2ae3d6d91067ce016974cf3ad31d4b102afa",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0040-000.part",
+          "bytes": 47046,
+          "sha256": "334271111f38bc62bd317b76ad5c2ae3d6d91067ce016974cf3ad31d4b102afa"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_2/e5_base_zs_geo_emb/meta.json",
+      "bytes": 532,
+      "sha256": "daed9f84369574a68437126b8251938d7ba7dc253175f53949b3097c44ca50e1",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0041-000.part",
+          "bytes": 532,
+          "sha256": "daed9f84369574a68437126b8251938d7ba7dc253175f53949b3097c44ca50e1"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_2/e5_base_zs_geo_emb/items.npy",
+      "bytes": 290629760,
+      "sha256": "b2b5b1783cfd9700f8801c2b4fe8189a7038b129bf0f0d962bd14873f2f481ab",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0042-000.part",
+          "bytes": 33554432,
+          "sha256": "2bbd94f73de062e2657967b214b486e17396334e1b552e08e046ddb07d419937"
+        },
+        {
+          "path": "bundle/0042-001.part",
+          "bytes": 33554432,
+          "sha256": "54cec47af973b949c9da593b0d35eb8e13e69a92bb3ed8fe7b4ce1e21f46af78"
+        },
+        {
+          "path": "bundle/0042-002.part",
+          "bytes": 33554432,
+          "sha256": "3148b76cc475eba96f13125ebd8f147315f88aaea9ca5e5e16eb7c182bf4a489"
+        },
+        {
+          "path": "bundle/0042-003.part",
+          "bytes": 33554432,
+          "sha256": "1bb905b774f0b1efed49aae653a5d1f9228c849c2cafc9bc9966585d4e224ba8"
+        },
+        {
+          "path": "bundle/0042-004.part",
+          "bytes": 33554432,
+          "sha256": "ba139441ef66735975bafc647312f76470ddfdad0c515444c94fe25b99e78f32"
+        },
+        {
+          "path": "bundle/0042-005.part",
+          "bytes": 33554432,
+          "sha256": "edff44bede71199a0fafb7a280f5c6aeb0445d48fcc9cbf2b70ec834df326169"
+        },
+        {
+          "path": "bundle/0042-006.part",
+          "bytes": 33554432,
+          "sha256": "9d185d2a836e34b6ab85a44a90d059f352f58c5cbb2abf97ec2d604a83e1f6b6"
+        },
+        {
+          "path": "bundle/0042-007.part",
+          "bytes": 33554432,
+          "sha256": "3832bf66bae0f8d2b2def1af4e4077560bac448820826813b9b49c781373d897"
+        },
+        {
+          "path": "bundle/0042-008.part",
+          "bytes": 22194304,
+          "sha256": "6ef7056fca62327334a02b8455da6a473820f65d896e98a4c7faf1e2258579ca"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_2/e5_base_zs_geo_emb/rtrain.npy",
+      "bytes": 8193152,
+      "sha256": "11a3cca2652669be50a65eafff63858bd872db0b9efa42150a879e3e4b68cf80",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0043-000.part",
+          "bytes": 8193152,
+          "sha256": "11a3cca2652669be50a65eafff63858bd872db0b9efa42150a879e3e4b68cf80"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_2/e5_base_zs_geo_emb/val.npy",
+      "bytes": 3072128,
+      "sha256": "911acdf5a9a6cbdf537836079bca2432a86a9001b40653be14c6134a753cf2c8",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0044-000.part",
+          "bytes": 3072128,
+          "sha256": "911acdf5a9a6cbdf537836079bca2432a86a9001b40653be14c6134a753cf2c8"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_2/e5_base_zs_geo_emb/test.npy",
+      "bytes": 3072128,
+      "sha256": "f236134bd69c54fc53981a6a20b0ce2d74b3f39ae99cc2a9a9692df5a6293474",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0045-000.part",
+          "bytes": 3072128,
+          "sha256": "f236134bd69c54fc53981a6a20b0ce2d74b3f39ae99cc2a9a9692df5a6293474"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_2/e5_base_zs_geo_emb/bench.npy",
+      "bytes": 3766400,
+      "sha256": "49eb882c6016e06a9c04a0a0fda8915e0b109da99807319e303f8b055c2f69ae",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0046-000.part",
+          "bytes": 3766400,
+          "sha256": "49eb882c6016e06a9c04a0a0fda8915e0b109da99807319e303f8b055c2f69ae"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_4/geo/meta.json",
+      "bytes": 1460,
+      "sha256": "f017241264d83e9c9f0e4354a695f0ebf0a6877dbc354f28902aed4754b2da20",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0047-000.part",
+          "bytes": 1460,
+          "sha256": "f017241264d83e9c9f0e4354a695f0ebf0a6877dbc354f28902aed4754b2da20"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_4/geo/rtrain.parquet",
+      "bytes": 11989471,
+      "sha256": "43fb8d1174b2c41decd36cc86731abfad2111260d8d582fb2536bc29da1238fa",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0048-000.part",
+          "bytes": 11989471,
+          "sha256": "43fb8d1174b2c41decd36cc86731abfad2111260d8d582fb2536bc29da1238fa"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_4/geo/val.parquet",
+      "bytes": 5755090,
+      "sha256": "2123e4eb02866a2dcd25eb8a703110a3435b42d6879d94ab9e545d7eefaa6a8a",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0049-000.part",
+          "bytes": 5755090,
+          "sha256": "2123e4eb02866a2dcd25eb8a703110a3435b42d6879d94ab9e545d7eefaa6a8a"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_4/geo/test.parquet",
+      "bytes": 5541117,
+      "sha256": "a47506293a01f29c4d1fa587a2a2fc40c7cffebb371aa4c34ba337f97d6f4828",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0050-000.part",
+          "bytes": 5541117,
+          "sha256": "a47506293a01f29c4d1fa587a2a2fc40c7cffebb371aa4c34ba337f97d6f4828"
+        }
+      ]
+    },
+    {
+      "path": "data/shared/agent_4/geo/bench.parquet",
+      "bytes": 5690272,
+      "sha256": "216b6f7599888835d192c1ea62b464ea91535f6097207aca8bece98de040ced2",
+      "role": "frozen preprocessing/embedding/geo artifact; labels excluded",
+      "parts": [
+        {
+          "path": "bundle/0051-000.part",
+          "bytes": 5690272,
+          "sha256": "216b6f7599888835d192c1ea62b464ea91535f6097207aca8bece98de040ced2"
+        }
+      ]
+    }
+  ]
+}

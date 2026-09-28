@@ -1,0 +1,11 @@
+{
+  "model_id": "intfloat/multilingual-e5-base",
+  "revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+  "license": "mit",
+  "checkpoint": null,
+  "seed": 42,
+  "batch_size": 48,
+  "command": "experiments/agent_2/encode.py --model e5_base --items t3 --queries none --batch-size 48",
+  "torch": "2.14.0+cu130",
+  "sentence_transformers": "6.1.0"
+}
